@@ -11,15 +11,14 @@
 %  https://s3-ap-northeast-1.amazonaws.com/masui.org/f/5/f5361cf93c65dd661e5797ed105bfeca.pdf
 %
 
-\documentclass{compsoft}
+% \documentclass{compsoft}
+\documentclass[topics]{compsoft} % トピックス
 
 % Preamble
 %
 % 「コンピュータソフトウェア」誌に掲載される論文の場合，次で
 % 巻数，号数，開始ページ，終了ページを指定する．
 \volNoPp{29}{1}{78}{84}
-
-% \tokushu{トピックス}
 
 % ここに，使用するパッケージを列挙する．
 \usepackage[dvips]{graphics}
@@ -59,8 +58,11 @@
 %\note{脚注に入れる内容}
 }
 
+\long\def\comment#1{}
+
 %
 % 和文アブストラクト
+\comment{
 \Jabstract{%
 講演者は30年以上にわたり、コンピュータの使い勝手(ユーザインタフェース)を改善する
 様々な研究開発を行なってきた。従来のコンピュータは主に専門家が使うものであったが、
@@ -70,12 +72,22 @@
 }
 %
 % 英文アブストラクト（本サンプルの原論文にはなし）
-\Eabstract{%
-We talk ablut uniersal UI.}
+% \Eabstract{%
+% We talk ablut uniersal UI.}
 %
+}
+
 \maketitle
 
+
 \section{はじめに}
+
+この度は,2020年度日本ソフトウェア科学会基礎研究賞を頂き,大変光栄に思います。
+数多くの優秀な共同研究者に恵まれて,この度の受賞に至りました。
+深く感謝申し上げます。
+受賞の対象となった研究は、「実証的(エンピリカル)ソフトウェア工学」と「ソフトウェアプロテクション」という
+2つの分野にまた
+がる一連のテーマです。以降,受賞記念講演のスライドに沿って説明いたします。
 
 \chosha{増井俊之}
 {1984年東京大学大学院工学系研究科電子工学専門課程修士課程修了。
