@@ -5,30 +5,21 @@
 %  https://cloudlatex.io/projects/411855/edit
 % 記事依頼
 %  https://mail.google.com/mail/u/0/?zx=a0kk8p4fqhm3#inbox/WhctKKWxdNgXpJNJdpfrtHgVMQJTthSKpCLwgCTppBnkqJbWZmmsxwzHgMwmjcxmLrKmfZV
-% 執筆要項
+% 執筆要項 (スタイルファイル)
 %  https://www.jssst.or.jp/edit/detail/style_files.html
 % 記事例
 %  https://s3-ap-northeast-1.amazonaws.com/masui.org/f/5/f5361cf93c65dd661e5797ed105bfeca.pdf
 %
 
-% \documentclass{compsoft}
 \documentclass[topics]{compsoft} % トピックス
 
-% Preamble
-%
-% 「コンピュータソフトウェア」誌に掲載される論文の場合，次で
-% 巻数，号数，開始ページ，終了ページを指定する．
+% 「コンピュータソフトウェア」誌に掲載される論文の場合，次で巻数，号数，開始ページ，終了ページを指定する．
 \volNoPp{29}{1}{78}{84}
 
-% ここに，使用するパッケージを列挙する．
 \usepackage[dvips]{graphics}
-
-% ユーザが定義したマクロなどはここに置く．ただし学会誌のスタイルの
-% 再定義は原則として避けること．
 
 \begin{document}
 
-% 論文のタイトル
 \title{ユニバーサルなユーザインタフェース}
 
 % 著者
@@ -60,27 +51,14 @@
 
 \long\def\comment#1{}
 
-%
-% 和文アブストラクト
-\comment{
-\Jabstract{%
+\maketitle
+
+\section{はじめに}
 講演者は30年以上にわたり、コンピュータの使い勝手(ユーザインタフェース)を改善する
 様々な研究開発を行なってきた。従来のコンピュータは主に専門家が使うものであったが、
 現在は誰でもいつでもどこでもコンピュータやネットワークを使うようになっており、
 弱者をサポートするためにコンピュータが使われる機会も増えてきている。
 この分野の様々な研究開発の歴史及び将来の展望について述べる。
-}
-%
-% 英文アブストラクト（本サンプルの原論文にはなし）
-% \Eabstract{%
-% We talk ablut uniersal UI.}
-%
-}
-
-\maketitle
-
-
-\section{はじめに}
 
 この度は,2020年度日本ソフトウェア科学会基礎研究賞を頂き,大変光栄に思います。
 数多くの優秀な共同研究者に恵まれて,この度の受賞に至りました。
