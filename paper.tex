@@ -418,7 +418,12 @@ EpisoPassでは、
 \bibliographystyle{jssst}
 \bibliography{paper}
 
-\vspace{1cm}
+\vspace{2mm}
+
+% \newif\ifChoshaPicture \ChoshaPictureTrue
+\def\choshapicturex#1{%
+  \vbox to 8mm{\hbox to 20mm{\includegraphics[width=28mm,bb=0 0 986 1186]{#1}}}}
+\choshapicturex{figures/f91ce16aa949ec47fa99da1fe7809b88.jpg}
 
 \chosha{増井俊之}{
   1984年東京大学大学院工学系研究科電子工学専門課程修士課程修了。 工学博士。
