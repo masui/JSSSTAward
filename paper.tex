@@ -300,6 +300,7 @@ Scrapboxは、
 これらは紙ベースのものですが、ScrapboxはこれをWikiで実現することにより、
 柔軟で有用なシステムとなっています。
 
+% https://the.kyoto/article/8035dca1-b561-4e01-ad81-4b5cc75161c1 から
 \begin{figure}[t]
   \includegraphics[width=9cm,bb=0 0 1204 882]{figures/1b2d14242e1eb302356a8f49c7450f04.png}
   \caption{梅棹忠夫のカード.}
@@ -329,19 +330,30 @@ GoogleなどでWeb検索したり他人に聞いたりすることで問題を�
 頭の中に出現しそうなキーワードにマッチするあらゆるヘルプ文書を用意しておき、
 キーワードと曖昧検索を行なうことによりヘルプを実現する
 「展開ヘルプ」\cite{ExpandHelp}技術を開発し、
-「Helpfeel」という商品名でサービスをしています。
+「Helpfeel」\footnote{
+  textsf{https:{\slash}{\slash}helpfeel.com{\slash}}
+}という商品名でサービスをしています。
+
+図\ref{helpinquiry}は
+Helpfeelでカラオケ店のサービスを検索しているところです。
+検索キーワードの綴りが間違っていたり、
+ドキュメントに含まれていないキーワードをユーザが指定した場合でも
+適切なヘルプを表示できるようになっています。
 
 \begin{figure}[t]
-  \includegraphics[width=9cm,bb=0 0 1640 1188]{figures/4b2ca6d18537ec8d6922e0389324c3ea.png}
+  \includegraphics[width=10cm,bb=0 0 1640 1188]{figures/4b2ca6d18537ec8d6922e0389324c3ea.png}
   \caption{カラオケのヘルプ.}
   \label{helpinquiry}
 \end{figure}
 
 \subsection{コンテンツ閲覧}
 
-最近のネットには大量のコンテンツが存在し、
-パソコンやテレビでそれらを楽しむことができますが、
-コンテンツを選択するための操作は難しいのが普通です。
+ネットには大量のコンテンツが存在し、
+パソコンやテレビ画面でそれらを楽しむことができますが、
+コンテンツを選択するための操作は簡単ではないのが普通です。
+パソコンの入力装置やリモコンのボタンを使って
+目的のコンテンツを選択するためには
+かなりのリテラシが必要です。
 
 ふたつのキーだけを利用して大量のコンテンツを選択して楽しむことができる
 「Serencast」システムを開発しました\cite{Serencast}。
